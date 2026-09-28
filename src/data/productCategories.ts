@@ -21,7 +21,7 @@ export const primaryCategories: ProductCategory[] = [
   {
     name: 'Pipes & Tubes',
     slug: 'pipes-tubes',
-    image: '/images/products/ss-304-pipe.jpg',
+    image: '/images/products/ss-304-pipe.webp',
     description:
       'Seamless, welded and ERW pipes and tubes supplied in solution-annealed condition for high-pressure, high-temperature and corrosive service across refining, petrochemical, power and marine installations.',
     dimensions:
@@ -30,7 +30,7 @@ export const primaryCategories: ProductCategory[] = [
   {
     name: 'Plates & Sheets',
     slug: 'plates-sheets',
-    image: '/images/products/ss-409l-sheet.jpg',
+    image: '/images/products/ss-409l-sheet.webp',
     description:
       'Hot and cold rolled plates, sheets and coils in mill-finish, 2B, No. 4 and BA surfaces, cut to size on our CNC laser and plasma beds for pressure vessels, tanks, heat exchangers and structural fabrication.',
     dimensions:
@@ -39,7 +39,7 @@ export const primaryCategories: ProductCategory[] = [
   {
     name: 'Round Bars',
     slug: 'round-bars',
-    image: '/images/products/ss-304-bar.jpg',
+    image: '/images/products/ss-304-bar.webp',
     description:
       'Forged, rolled, peeled and centreless-ground bars in bright and black finish, machined to close tolerance for shafts, fasteners, valve stems, pump components and precision turned parts.',
     dimensions:
@@ -48,7 +48,7 @@ export const primaryCategories: ProductCategory[] = [
   {
     name: 'Flanges',
     slug: 'flanges',
-    image: '/images/products/ss-weld-neck-flange.jpg',
+    image: '/images/products/ss-weld-neck-flange.webp',
     description:
       'Weld neck, slip-on, blind, socket weld, lap joint, threaded, orifice and long weld neck flanges forged from certified billets with raised, flat and ring-type joint facings.',
     dimensions:
@@ -57,7 +57,7 @@ export const primaryCategories: ProductCategory[] = [
   {
     name: 'Forged Fittings',
     slug: 'forged-fittings',
-    image: '/images/products/socket-weld-elbow.jpg',
+    image: '/images/products/socket-weld-elbow.webp',
     description:
       'High-pressure socket weld and threaded elbows, tees, crosses, couplings, unions, caps, plugs and bushings, closed-die forged for hydraulic, instrumentation and small-bore process piping.',
     dimensions:
@@ -66,7 +66,7 @@ export const primaryCategories: ProductCategory[] = [
   {
     name: 'Buttweld Fittings',
     slug: 'buttweld-fittings',
-    image: '/images/products/bw-ss-elbow.jpg',
+    image: '/images/products/bw-ss-elbow.webp',
     description:
       'Seamless and welded elbows, tees, reducers, caps, stub ends and pipe bends with bevelled ends for full-penetration welds, giving a smooth bore and uninterrupted flow in critical process lines.',
     dimensions:
@@ -78,7 +78,7 @@ export const additionalCategories: ProductCategory[] = [
   {
     name: 'Fasteners',
     slug: 'fasteners',
-    image: '/images/products/ss-hex-bolts.jpg',
+    image: '/images/products/ss-hex-bolts.webp',
     description:
       'Heavy hex bolts, stud bolts, hex nuts, washers, screws, anchor bolts and threaded rods, cold forged and hot dip galvanised or PTFE coated on request for structural and flange-joint assemblies.',
     dimensions:
@@ -87,7 +87,7 @@ export const additionalCategories: ProductCategory[] = [
   {
     name: 'Gasketing Solutions',
     slug: 'gasketing-solutions',
-    image: '/images/products/af-fibre-sheet-standard.jpg',
+    image: '/images/products/af-fibre-sheet-standard.webp',
     description:
       'Spiral wound gaskets, compressed fibre and asbestos-free jointing sheets, and pre-cut gaskets profiled to your flange drawings for leak-tight sealing under thermal cycling and pressure fluctuation.',
     dimensions:
@@ -96,7 +96,7 @@ export const additionalCategories: ProductCategory[] = [
   {
     name: 'Structural Steel',
     slug: 'structural-steel',
-    image: '/images/products/structural-steel-sections.jpg',
+    image: '/images/products/structural-steel-sections.webp',
     description:
       'TMT reinforcement bar, mild steel angles, beams and channels, parallel flange sections, universal beams and columns, and rail sections for building frames, industrial sheds, crane runways and railway track work.',
     dimensions:
@@ -105,7 +105,7 @@ export const additionalCategories: ProductCategory[] = [
   {
     name: 'Angles & Channels',
     slug: 'angles-channels',
-    image: '/images/palgotta/ss-304-angles-channels.jpg',
+    image: '/images/palgotta/ss-304-angles-channels.webp',
     description:
       'Stainless steel angle and channel sections in equal, unequal, L, C, U, strut and slotted profiles, cut to length for structural frames, staircases, walkways, shelving and architectural fabrication where corrosion resistance matters as much as strength.',
     dimensions:
@@ -114,7 +114,7 @@ export const additionalCategories: ProductCategory[] = [
   {
     name: 'Specialized Product',
     slug: 'specialized-product',
-    image: '/images/champak/other-items-manufacturer-exporter.jpg',
+    image: '/images/champak/other-items-manufacturer-exporter.webp',
     description:
       'Abrasion resistant, armour, boiler, Corten weathering, manganese, quenched and tempered, DSQ and molybdenum alloy plates for wear-critical, ballistic and elevated-temperature duty.',
     dimensions:

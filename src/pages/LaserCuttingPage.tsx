@@ -51,28 +51,28 @@ const processHighlights = [
 ];
 
 const specifications = [
-  { step: 'I', label: 'Cutting Tolerance', value: '±0.01mm (Sub-micron optical alignment)', image: '/images/precision_parts.png' },
-  { step: 'II', label: 'Bed Dimensions', value: 'Up to 4000mm x 2000mm full plate bed', image: '/images/titanium_plates.png' },
-  { step: 'III', label: 'Material Range', value: 'Stainless Steel (304, 316L, 317L, 321, 310S), Titanium, Inconel, Monel, Duplex', image: '/images/stainless_pipes.png' },
-  { step: 'IV', label: 'Thickness Capability', value: '0.5mm to 60mm high-density plate profile cutting', image: '/images/heavy_rolling_mill.jpg' },
-  { step: 'V', label: 'Machine Capacity', value: '6kW High-Power Fiber Laser Cells & 5-Axis CNC Milling Centers', image: '/images/cnc_laser_blue.jpg' },
-  { step: 'VI', label: 'Edge Finish', value: 'Dross-free nitrogen assist edge finish, ready for immediate welding', image: '/images/flanges_industrial.png' },
+  { step: 'I', label: 'Cutting Tolerance', value: '±0.01mm (Sub-micron optical alignment)', image: '/images/precision_parts.webp' },
+  { step: 'II', label: 'Bed Dimensions', value: 'Up to 4000mm x 2000mm full plate bed', image: '/images/titanium_plates.webp' },
+  { step: 'III', label: 'Material Range', value: 'Stainless Steel (304, 316L, 317L, 321, 310S), Titanium, Inconel, Monel, Duplex', image: '/images/stainless_pipes.webp' },
+  { step: 'IV', label: 'Thickness Capability', value: '0.5mm to 60mm high-density plate profile cutting', image: '/images/heavy_rolling_mill.webp' },
+  { step: 'V', label: 'Machine Capacity', value: '6kW High-Power Fiber Laser Cells & 5-Axis CNC Milling Centers', image: '/images/cnc_laser_blue.webp' },
+  { step: 'VI', label: 'Edge Finish', value: 'Dross-free nitrogen assist edge finish, ready for immediate welding', image: '/images/flanges_industrial.webp' },
 ];
 
 const equipmentList = [
   {
     title: '6kW TruLaser Fiber Cell',
-    image: '/images/precision_parts.png',
+    image: '/images/precision_parts.webp',
     caption: 'High-speed nitrogen laser cutting cell for aerospace grade sheet profiles.',
   },
   {
     title: '5-Axis Heavy CNC Center',
-    image: '/images/flanges_industrial.png',
+    image: '/images/flanges_industrial.webp',
     caption: 'Multi-axis milling center producing high-yield tube sheets and custom flanges.',
   },
   {
     title: 'Optical Laser Profiler',
-    image: '/images/titanium_plates.png',
+    image: '/images/titanium_plates.webp',
     caption: 'Sub-micron coordinate measuring and automated edge inspection cell.',
   },
 ];
@@ -152,7 +152,7 @@ const Reveal: React.FC<{ children: React.ReactNode; delay?: number }> = ({ child
                 zIndex: 2,
               }}
             >
-              <img
+              <img loading="lazy"
                 src={spec.image}
                 alt={spec.label}
                 style={{
@@ -367,7 +367,7 @@ export const LaserCuttingPage: React.FC<LaserCuttingPageProps> = ({ onOpenQuoteM
       {/* 1. Hero Section with Rich Photography */}
       <section
         style={{
-          backgroundImage: 'linear-gradient(120deg, rgba(0, 0, 0, 0.6) 0%), url("/images/pexels-pppsdavid-5851494.jpg")',
+          backgroundImage: 'linear-gradient(120deg, rgba(0, 0, 0, 0.6) 0%), url("/images/pexels-pppsdavid-5851494.webp")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           color: '#FFFFFF',
@@ -443,8 +443,8 @@ export const LaserCuttingPage: React.FC<LaserCuttingPageProps> = ({ onOpenQuoteM
             <div className="feature-split-grid">
               {/* Photo side */}
               <div style={{ border: `1px solid ${COLORS.divider}`, overflow: 'hidden', background: COLORS.panel }}>
-                <img
-                  src="/images/precision_parts.png"
+                <img loading="lazy"
+                  src="/images/precision_parts.webp"
                   alt="Multi-axis laser cutting machinery"
                   style={{ width: '100%', height: '400px', objectFit: 'cover', display: 'block' }}
                 />
@@ -532,7 +532,7 @@ export const LaserCuttingPage: React.FC<LaserCuttingPageProps> = ({ onOpenQuoteM
               {equipmentList.map((eq) => (
                 <div key={eq.title} className="equipment-card">
                   <div style={{ height: '200px', overflow: 'hidden' }}>
-                    <img src={eq.image} alt={eq.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                    <img loading="lazy" src={eq.image} alt={eq.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                   </div>
                   <div style={{ padding: '24px', flexGrow: 1 }}>
                     <div style={{ fontWeight: 700, fontSize: '1.05rem', color: COLORS.text, marginBottom: '8px' }}>

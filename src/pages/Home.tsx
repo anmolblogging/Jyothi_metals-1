@@ -45,35 +45,35 @@ export const Home: React.FC<HomeProps> = ({ onNavigate, onOpenQuoteModal }) => {
       num: '01',
       title: 'ADVANCED METALLURGY TECHNOLOGY',
       desc: 'Multi-axis CNC laser cutting and computer-controlled rolling lines ensure sub-micron tolerance precision across all metal components and titanium sheets.',
-      image: '/images/industrial_facility.png',
+      image: '/images/industrial_facility.webp',
       alt: 'Multi-axis CNC Laser Cutting Production Line',
     },
     {
       num: '02',
       title: 'DUAL ISO 9001 & AS9100D CERTIFIED',
       desc: 'Comprehensive lab testing, X-ray weld inspection, and full heat-lot traceability reports included with every shipment for aerospace compliance.',
-      image: '/images/quality_lab.jpg',
+      image: '/images/quality_lab.webp',
       alt: 'Aerospace Grade Titanium Testing & Accreditation',
     },
     {
       num: '03',
       title: '30+ YEARS EXPERT ENGINEERING TEAMS',
       desc: 'In-house metallurgists assist in customizing heat-treatment schedules and bespoke extrusion profiles tailored to your exact CAD files.',
-      image: '/images/heavy_rolling_mill.jpg',
+      image: '/images/heavy_rolling_mill.webp',
       alt: 'Expert Metallurgical Engineering & Technical CAD Advisory',
     },
     {
       num: '04',
       title: 'EXPEDITED 48H GLOBAL SUPPLY CHAIN',
       desc: 'Strategic warehouses in North America, Europe, and Asia guaranteeing rapid dispatch and real-time tracking on standard alloy stock.',
-      image: '/images/stock_warehouse_racks.jpg',
+      image: '/images/stock_warehouse_racks.webp',
       alt: 'Global Supply Logistics & Heavy Infrastructure Freight',
     },
     {
       num: '05',
       title: 'INDEPENDENT THIRD-PARTY INSPECTION',
       desc: 'We arrange third-party inspection on request. Independent agencies such as DNV, Lloyd’s and TÜV witness the testing, stamp the coupons, and counter-sign EN 10204 3.2 mill test certificates before dispatch.',
-      image: '/images/precision_parts.png',
+      image: '/images/precision_parts.webp',
       alt: 'Third-Party Witnessed Inspection & EN 10204 3.2 Certification',
     },
   ];
@@ -91,16 +91,16 @@ export const Home: React.FC<HomeProps> = ({ onNavigate, onOpenQuoteModal }) => {
       duration: '38s',
       reverse: false,
       logos: [
-        { src: '/images/logos/tpi/tuv-sud.png', alt: 'TÜV SÜD South Asia' },
-        { src: '/images/logos/tpi/tuv-india.png', alt: 'TUV India, TUV NORD Group' },
-        { src: '/images/logos/tpi/sgs.png', alt: 'SGS' },
-        { src: '/images/logos/tpi/tuv-rheinland.png', alt: 'TÜV Rheinland' },
-        { src: '/images/logos/tpi/tcs.png', alt: 'Tata Consultancy Services' },
-        { src: '/images/logos/tpi/bureau-veritas.png', alt: 'Bureau Veritas' },
-        { src: '/images/logos/tpi/lloyds-register.png', alt: "Lloyd's Register" },
-        { src: '/images/logos/tpi/pdil.png', alt: 'Projects & Development India Ltd (PDIL)' },
-        { src: '/images/logos/tpi/irclass.png', alt: 'Indian Register of Shipping (IRCLASS)' },
-        { src: '/images/logos/tpi/intertek.png', alt: 'Intertek' },
+        { src: '/images/logos/tpi/tuv-sud.webp', alt: 'TÜV SÜD South Asia' },
+        { src: '/images/logos/tpi/tuv-india.webp', alt: 'TUV India, TUV NORD Group' },
+        { src: '/images/logos/tpi/sgs.webp', alt: 'SGS' },
+        { src: '/images/logos/tpi/tuv-rheinland.webp', alt: 'TÜV Rheinland' },
+        { src: '/images/logos/tpi/tcs.webp', alt: 'Tata Consultancy Services' },
+        { src: '/images/logos/tpi/bureau-veritas.webp', alt: 'Bureau Veritas' },
+        { src: '/images/logos/tpi/lloyds-register.webp', alt: "Lloyd's Register" },
+        { src: '/images/logos/tpi/pdil.webp', alt: 'Projects & Development India Ltd (PDIL)' },
+        { src: '/images/logos/tpi/irclass.webp', alt: 'Indian Register of Shipping (IRCLASS)' },
+        { src: '/images/logos/tpi/intertek.webp', alt: 'Intertek' },
       ],
     },
     {
@@ -111,23 +111,23 @@ export const Home: React.FC<HomeProps> = ({ onNavigate, onOpenQuoteModal }) => {
       duration: '55s',
       reverse: true,
       logos: [
-        { src: '/images/logos/clients/indian-oil.png', alt: 'Indian Oil Corporation Limited' },
-        { src: '/images/logos/clients/bharat-petroleum.png', alt: 'Bharat Petroleum Corporation Ltd.' },
-        { src: '/images/logos/clients/hindustan-petroleum.png', alt: 'Hindustan Petroleum Corporation Ltd.' },
-        { src: '/images/logos/clients/cpcl.png', alt: 'Chennai Petroleum Corporation Ltd.' },
-        { src: '/images/logos/clients/ongc.png', alt: 'Oil and Natural Gas Corporation' },
-        { src: '/images/logos/clients/gail.png', alt: 'GAIL (India) Limited' },
-        { src: '/images/logos/clients/rcf.png', alt: 'Rashtriya Chemicals & Fertilizers Ltd.' },
-        { src: '/images/logos/clients/deepak-fertilisers.png', alt: 'Deepak Fertilisers and Petrochemicals Corporation Ltd.' },
-        { src: '/images/logos/clients/iffco.png', alt: 'IFFCO' },
-        { src: '/images/logos/clients/fact.png', alt: 'Fertilisers and Chemicals Travancore (FACT)' },
-        { src: '/images/logos/clients/ntpc.png', alt: 'NTPC' },
-        { src: '/images/logos/clients/bhel.png', alt: 'BHEL' },
-        { src: '/images/logos/clients/larsen-toubro.png', alt: 'Larsen & Toubro' },
-        { src: '/images/logos/clients/barc.png', alt: 'Bhabha Atomic Research Centre' },
-        { src: '/images/logos/clients/npcil.png', alt: 'Nuclear Power Corporation of India Ltd.' },
-        { src: '/images/logos/clients/isgec.png', alt: 'ISGEC Heavy Engineering Ltd.' },
-        { src: '/images/logos/clients/adani.png', alt: 'Adani Group' },
+        { src: '/images/logos/clients/indian-oil.webp', alt: 'Indian Oil Corporation Limited' },
+        { src: '/images/logos/clients/bharat-petroleum.webp', alt: 'Bharat Petroleum Corporation Ltd.' },
+        { src: '/images/logos/clients/hindustan-petroleum.webp', alt: 'Hindustan Petroleum Corporation Ltd.' },
+        { src: '/images/logos/clients/cpcl.webp', alt: 'Chennai Petroleum Corporation Ltd.' },
+        { src: '/images/logos/clients/ongc.webp', alt: 'Oil and Natural Gas Corporation' },
+        { src: '/images/logos/clients/gail.webp', alt: 'GAIL (India) Limited' },
+        { src: '/images/logos/clients/rcf.webp', alt: 'Rashtriya Chemicals & Fertilizers Ltd.' },
+        { src: '/images/logos/clients/deepak-fertilisers.webp', alt: 'Deepak Fertilisers and Petrochemicals Corporation Ltd.' },
+        { src: '/images/logos/clients/iffco.webp', alt: 'IFFCO' },
+        { src: '/images/logos/clients/fact.webp', alt: 'Fertilisers and Chemicals Travancore (FACT)' },
+        { src: '/images/logos/clients/ntpc.webp', alt: 'NTPC' },
+        { src: '/images/logos/clients/bhel.webp', alt: 'BHEL' },
+        { src: '/images/logos/clients/larsen-toubro.webp', alt: 'Larsen & Toubro' },
+        { src: '/images/logos/clients/barc.webp', alt: 'Bhabha Atomic Research Centre' },
+        { src: '/images/logos/clients/npcil.webp', alt: 'Nuclear Power Corporation of India Ltd.' },
+        { src: '/images/logos/clients/isgec.webp', alt: 'ISGEC Heavy Engineering Ltd.' },
+        { src: '/images/logos/clients/adani.webp', alt: 'Adani Group' },
       ],
     },
     {
@@ -138,22 +138,22 @@ export const Home: React.FC<HomeProps> = ({ onNavigate, onOpenQuoteModal }) => {
       duration: '50s',
       reverse: false,
       logos: [
-        { src: '/images/logos/sources/jindal-steel-power.png', alt: 'Jindal Steel & Power' },
-        { src: '/images/logos/sources/jindal-stainless.png', alt: 'Jindal Stainless (JSL)' },
-        { src: '/images/logos/sources/sail.png', alt: 'Steel Authority of India (SAIL)' },
-        { src: '/images/logos/sources/vizag-steel.png', alt: 'Vizag Steel, RINL' },
-        { src: '/images/logos/sources/mukand.png', alt: 'Mukand Ltd, Bajaj Group' },
-        { src: '/images/logos/sources/viraj.png', alt: 'Viraj Profiles' },
-        { src: '/images/logos/sources/maharashtra-seamless.png', alt: 'Maharashtra Seamless Limited' },
-        { src: '/images/logos/sources/venus-pipes.png', alt: 'Venus Pipes and Tubes' },
-        { src: '/images/logos/sources/remi.png', alt: 'Remi Group' },
-        { src: '/images/logos/sources/rimjhim-ispat.png', alt: 'Rimjhim Ispat' },
-        { src: '/images/logos/sources/arcelormittal.png', alt: 'ArcelorMittal' },
-        { src: '/images/logos/sources/amns-india.png', alt: 'AM/NS India' },
-        { src: '/images/logos/sources/nippon-steel.png', alt: 'Nippon Steel & Sumitomo Metal Corporation' },
-        { src: '/images/logos/sources/tubacex.png', alt: 'Tubacex Group' },
-        { src: '/images/logos/sources/sij-acroni.png', alt: 'SIJ Acroni' },
-        { src: '/images/logos/sources/dkc.png', alt: 'DKC Steel' },
+        { src: '/images/logos/sources/jindal-steel-power.webp', alt: 'Jindal Steel & Power' },
+        { src: '/images/logos/sources/jindal-stainless.webp', alt: 'Jindal Stainless (JSL)' },
+        { src: '/images/logos/sources/sail.webp', alt: 'Steel Authority of India (SAIL)' },
+        { src: '/images/logos/sources/vizag-steel.webp', alt: 'Vizag Steel, RINL' },
+        { src: '/images/logos/sources/mukand.webp', alt: 'Mukand Ltd, Bajaj Group' },
+        { src: '/images/logos/sources/viraj.webp', alt: 'Viraj Profiles' },
+        { src: '/images/logos/sources/maharashtra-seamless.webp', alt: 'Maharashtra Seamless Limited' },
+        { src: '/images/logos/sources/venus-pipes.webp', alt: 'Venus Pipes and Tubes' },
+        { src: '/images/logos/sources/remi.webp', alt: 'Remi Group' },
+        { src: '/images/logos/sources/rimjhim-ispat.webp', alt: 'Rimjhim Ispat' },
+        { src: '/images/logos/sources/arcelormittal.webp', alt: 'ArcelorMittal' },
+        { src: '/images/logos/sources/amns-india.webp', alt: 'AM/NS India' },
+        { src: '/images/logos/sources/nippon-steel.webp', alt: 'Nippon Steel & Sumitomo Metal Corporation' },
+        { src: '/images/logos/sources/tubacex.webp', alt: 'Tubacex Group' },
+        { src: '/images/logos/sources/sij-acroni.webp', alt: 'SIJ Acroni' },
+        { src: '/images/logos/sources/dkc.webp', alt: 'DKC Steel' },
       ],
     },
   ];
@@ -198,22 +198,22 @@ export const Home: React.FC<HomeProps> = ({ onNavigate, onOpenQuoteModal }) => {
   const heroSlides = [
     {
       id: 1,
-      url: '/images/hero_molten_pour.jpg',
+      url: '/images/hero_molten_pour.webp',
       title: 'Molten Steel Pour — Foundry & Casting',
     },
     {
       id: 2,
-      url: '/images/hero_refinery_dusk.jpg',
+      url: '/images/hero_refinery_dusk.webp',
       title: 'Refinery & Petrochemical Plant Supply',
     },
     {
       id: 3,
-      url: '/images/hero_blast_furnace.jpg',
+      url: '/images/hero_blast_furnace.webp',
       title: 'Blast Furnace & Primary Metallurgy',
     },
     {
       id: 4,
-      url: '/images/hero_refinery_pipework.jpg',
+      url: '/images/hero_refinery_pipework.webp',
       title: 'Refinery Pipework & Pressure Systems',
     },
   ];
@@ -706,8 +706,8 @@ export const Home: React.FC<HomeProps> = ({ onNavigate, onOpenQuoteModal }) => {
                 borderTopRightRadius: '240px !important',
               }}
             >
-              <img
-                src="/images/pipe_stockyard.jpg"
+              <img loading="lazy"
+                src="/images/pipe_stockyard.webp"
                 alt="Jyoti Metal Foundry Production Facilities"
                 style={{
                   width: '100%',
@@ -851,7 +851,7 @@ export const Home: React.FC<HomeProps> = ({ onNavigate, onOpenQuoteModal }) => {
           // orange crane line are the point, so they stay visible; the wordmark
           // sits over the darker mid-band and carries its own shadow.
           backgroundImage:
-            'linear-gradient(rgba(6, 18, 33, 0.40), rgba(6, 18, 33, 0.58)), url("/images/pexels-egojane-10031804.jpg")',
+            'linear-gradient(rgba(6, 18, 33, 0.40), rgba(6, 18, 33, 0.58)), url("/images/pexels-egojane-10031804.webp")',
           backgroundAttachment: 'fixed',
           backgroundPosition: 'center',
           backgroundSize: 'cover',
@@ -1134,49 +1134,49 @@ export const Home: React.FC<HomeProps> = ({ onNavigate, onOpenQuoteModal }) => {
                 title: 'Sheets',
                 mainCat: 'Plates & Sheets',
                 tag: 'ASTM A240 / 304 & 316',
-                image: '/images/plate_forming_mill.jpg',
+                image: '/images/plate_forming_mill.webp',
               },
               {
                 title: 'Pipe and Tubes',
                 mainCat: 'Pipes & Tubes',
                 tag: 'OD: 6mm - 1200mm',
-                image: '/images/stainless_pipes.png',
+                image: '/images/stainless_pipes.webp',
               },
               {
                 title: 'Plates',
                 mainCat: 'Plates & Sheets',
                 tag: 'Grade 5 Ti & Heavy SS',
-                image: '/images/titanium_plates.png',
+                image: '/images/titanium_plates.webp',
               },
               {
                 title: 'Flanges',
                 mainCat: 'Flanges',
                 tag: 'ANSI B16.5 Class 150-2500',
-                image: '/images/flanges_industrial.png',
+                image: '/images/flanges_industrial.webp',
               },
               {
                 title: 'Round Bars',
                 mainCat: 'Round Bars',
                 tag: 'Solid Turned & Polished',
-                image: '/images/round_bars.png',
+                image: '/images/round_bars.webp',
               },
               {
                 title: 'Buttweld Fittings',
                 mainCat: 'Buttweld Fittings',
                 tag: 'ASME B16.9 Fittings',
-                image: '/images/pipe_fittings.png',
+                image: '/images/pipe_fittings.webp',
               },
               {
                 title: 'Forged Fittings',
                 mainCat: 'Forged Fittings',
                 tag: '3000# / 6000# Socket Weld',
-                image: '/images/machine_shop_floor.jpg',
+                image: '/images/machine_shop_floor.webp',
               },
               {
                 title: 'Specialized Product',
                 mainCat: 'Specialized Product',
                 tag: 'Laser Cut & CNC Drilled',
-                image: '/images/plate_laser_cutting.jpg',
+                image: '/images/plate_laser_cutting.webp',
               },
             ].map((cat, catIdx) => (
               <div
@@ -1200,7 +1200,7 @@ export const Home: React.FC<HomeProps> = ({ onNavigate, onOpenQuoteModal }) => {
                 }}
               >
                 {/* Full Height Background Image */}
-                <img
+                <img loading="lazy"
                   src={cat.image}
                   alt={cat.title}
                   className="category-arch-img"
@@ -1607,7 +1607,7 @@ export const Home: React.FC<HomeProps> = ({ onNavigate, onOpenQuoteModal }) => {
                         }}
                       >
                       <div className="product-image-container" style={{ height: '200px', position: 'relative', overflow: 'hidden' }}>
-                        <img
+                        <img loading="lazy"
                           src={prod.image}
                           alt={prod.title}
                           className="product-img"

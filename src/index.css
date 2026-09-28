@@ -2851,6 +2851,7 @@ img,
   flex-direction: column;
   gap: 6px;
   transition: background 0.25s ease;
+  min-height: 125px;
 }
 
 .metal-price-card:hover {

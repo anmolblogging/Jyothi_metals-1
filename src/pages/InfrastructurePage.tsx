@@ -67,31 +67,31 @@ export const InfrastructurePage: React.FC<InfrastructurePageProps> = ({ onOpenQu
       number: '01',
       title: 'Cold Rolled Coils',
       sub: 'Incoming stainless steel strip',
-      image: '/images/plant/decoiler-coil-line.jpg',
+      image: '/images/plant/decoiler-coil-line.webp',
     },
     {
       number: '02',
       title: 'Slitting Line',
       sub: 'Strips slit to width for the tube diameter',
-      image: '/images/plant/slitting-tube-mill.jpg',
+      image: '/images/plant/slitting-tube-mill.webp',
     },
     {
       number: '03',
       title: 'Tube Mill',
       sub: 'Roll forming & TIG welding without filler metal',
-      image: '/images/plant/plant-overview.jpg',
+      image: '/images/plant/plant-overview.webp',
     },
     {
       number: '04',
       title: 'Cutter',
       sub: 'Tubes cut to required lengths',
-      image: '/images/plant/straightening-machine.jpg',
+      image: '/images/plant/straightening-machine.webp',
     },
     {
       number: '05',
       title: 'Continuous Anneal & Pickle Line',
       sub: 'Heat treatment and immediate quenching',
-      image: '/images/plant/annealing-line.jpg',
+      image: '/images/plant/annealing-line.webp',
     },
     {
       number: '06',
@@ -101,25 +101,25 @@ export const InfrastructurePage: React.FC<InfrastructurePageProps> = ({ onOpenQu
       // tube mill floor shot. It is the one plant image not already spoken for
       // by another card — 07 keeps the polishing-line bench, which is what that
       // photo actually depicts.
-      image: '/images/plant/tube-mill-floor.jpg',
+      image: '/images/plant/tube-mill-floor.webp',
     },
     {
       number: '07',
       title: 'Buffing or Pickling Bath',
       sub: 'Surface finishing route as specified',
-      image: '/images/plant/polishing-line.jpg',
+      image: '/images/plant/polishing-line.webp',
     },
     {
       number: '08',
       title: 'Inspecting',
       sub: 'Every single piece inspected',
-      image: '/images/plant/inspection-packaging.jpg',
+      image: '/images/plant/inspection-packaging.webp',
     },
     {
       number: '09',
       title: 'Packing & Delivery',
       sub: 'Labelled bundles dispatched with test certificates',
-      image: '/images/plant/size-range-stock.jpg',
+      image: '/images/plant/size-range-stock.webp',
     },
   ];
 
@@ -230,7 +230,7 @@ export const InfrastructurePage: React.FC<InfrastructurePageProps> = ({ onOpenQu
           className="infra-hero-bg"
           style={{
             backgroundImage:
-              'linear-gradient(135deg, rgba(6, 18, 33, 0.92) 0%, rgba(6, 18, 33, 0.62) 50%, rgba(6, 18, 33, 0.94) 100%), url("/images/plant/tube-mill-floor.jpg")',
+              'linear-gradient(135deg, rgba(6, 18, 33, 0.92) 0%, rgba(6, 18, 33, 0.62) 50%, rgba(6, 18, 33, 0.94) 100%), url("/images/plant/tube-mill-floor.webp")',
           }}
         />
         <div className="infra-sheen-layer" />
@@ -355,8 +355,8 @@ export const InfrastructurePage: React.FC<InfrastructurePageProps> = ({ onOpenQu
                 className="about-arch-frame-reversed"
                 style={{ borderRadius: '0px', overflow: 'hidden', boxShadow: '0 20px 45px rgba(0,0,0,0.14)', background: '#061221' }}
               >
-                <img
-                  src="/images/plant/plant-overview.jpg"
+                <img loading="lazy"
+                  src="/images/plant/plant-overview.webp"
                   alt="Stainless steel tube mill shop floor with cold rolled coils"
                   style={{ width: '100%', height: '460px', objectFit: 'cover', display: 'block' }}
                 />
@@ -512,7 +512,7 @@ export const InfrastructurePage: React.FC<InfrastructurePageProps> = ({ onOpenQu
                       style={{ position: 'absolute', inset: 0, background: 'rgba(0,0,0,0.12)', zIndex: 10, transition: 'opacity 0.4s ease' }}
                       className="group-hover:opacity-0"
                     />
-                    <img
+                    <img loading="lazy"
                       src={step.image}
                       alt={step.title}
                       style={{

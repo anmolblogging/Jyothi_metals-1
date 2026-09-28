@@ -61,7 +61,7 @@ export const articles: Article[] = [
     category: 'Materials Science',
     date: 'July 18, 2026',
     readTime: '8 min read',
-    image: '/images/pexels-bence-szemerey-337043-6804265.jpg',
+    image: '/images/pexels-bence-szemerey-337043-6804265.webp',
     author: 'Dr. Anita Rao',
     authorRole: 'Metallurgy & Materials',
     standfirst:
@@ -144,7 +144,7 @@ export const articles: Article[] = [
     category: 'Materials Science',
     date: 'June 28, 2026',
     readTime: '10 min read',
-    image: '/images/pexels-eugeniofr-30005294.jpg',
+    image: '/images/pexels-eugeniofr-30005294.webp',
     author: 'Dr. Anita Rao',
     authorRole: 'Metallurgy & Materials',
     standfirst:
@@ -235,7 +235,7 @@ export const articles: Article[] = [
     category: 'Manufacturing',
     date: 'July 09, 2026',
     readTime: '6 min read',
-    image: '/images/pexels-sergey-sergeev-2153675005-32845683.jpg',
+    image: '/images/pexels-sergey-sergeev-2153675005-32845683.webp',
     author: 'Rajesh Menon',
     authorRole: 'Process & Quality',
     standfirst:
@@ -301,7 +301,7 @@ export const articles: Article[] = [
     category: 'Sustainability',
     date: 'June 15, 2026',
     readTime: '7 min read',
-    image: '/images/pexels-jakubzerdzicki-33813584.jpg',
+    image: '/images/pexels-jakubzerdzicki-33813584.webp',
     author: 'Priya Nair',
     authorRole: 'Sustainability & Supply Chain',
     standfirst:
@@ -375,7 +375,7 @@ export const articles: Article[] = [
     category: 'Industry Trends',
     date: 'June 03, 2026',
     readTime: '5 min read',
-    image: '/images/pexels-willians-huerta-2157111846-36397988.jpg',
+    image: '/images/pexels-willians-huerta-2157111846-36397988.webp',
     author: 'Vikram Shah',
     authorRole: 'Quality Assurance',
     standfirst:
@@ -451,7 +451,7 @@ export const articles: Article[] = [
     category: 'Case Studies',
     date: 'May 22, 2026',
     readTime: '12 min read',
-    image: '/images/pexels-tokuo-nobuhiro-79378678-20472153.jpg',
+    image: '/images/pexels-tokuo-nobuhiro-79378678-20472153.webp',
     author: 'Rajesh Menon',
     authorRole: 'Process & Quality',
     standfirst:

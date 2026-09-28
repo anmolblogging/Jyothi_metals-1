@@ -16,7 +16,7 @@ interface AboutPageProps {
  * Milestones are kept to what the company can actually show on paper:
  *   - the Khushkhera (Alwar) tube mill and its 5,000 TPA capacity — cert1.pdf
  *   - the three ISO certificates, their scope, numbers and dates — the QCC
- *     certificates in the repo root (ISO - JYOTI METAL INDIA *.jpeg)
+ *     certificates in the repo root (ISO - JYOTI METAL INDIA *.webp)
  * Do not add years for plant, capacity or approvals that have no certificate
  * or brochure behind them.
  */
@@ -25,25 +25,25 @@ const timelineMilestones = [
     year: '1989',
     title: 'Business Started',
     desc: 'Jyoti Metal (India) started work from Mumbai as a supplier and stockist of stainless steel and other metals. From the first year itself, the aim was simple. Give the customer correct material, at the correct time, with proper papers.',
-    image: '/images/plant/size-range-stock.jpg',
+    image: '/images/plant/size-range-stock.webp',
   },
   {
     year: '2009',
     title: 'Own Tube Mill at Alwar, Rajasthan',
     desc: 'Our own stainless steel pipe and tube plant started at Plot E-41 (G-1), RIICO Industrial Area, Khushkhera, Distt. Alwar, Rajasthan. Installed capacity is 5,000 tonnes per year. The line is fully automatic and runs to ASTM standards.',
-    image: '/images/plant/plant-overview.jpg',
+    image: '/images/plant/plant-overview.webp',
   },
   {
     year: '2019',
     title: 'Three ISO Certificates Received',
     desc: 'On 18 June 2019 we received ISO 9001:2015 for quality, ISO 14001:2015 for environment and ISO 45001:2018 for health and safety. All three cover both our Mumbai office and our Alwar plant.',
-    image: '/images/plant/inspection-packaging.jpg',
+    image: '/images/plant/inspection-packaging.webp',
   },
   {
     year: '2025',
     title: 'All Certificates Renewed up to 2028',
     desc: 'All three ISO certificates were re-issued on 10 June 2025 and are valid up to 9 June 2028. Certificate status can be checked online with the certifying body.',
-    image: '/images/plant/annealing-line.jpg',
+    image: '/images/plant/annealing-line.webp',
   },
 ];
 
@@ -66,7 +66,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenQuoteModal }) => {
       num: 'I',
       title: 'OUR OWN PIPE & TUBE PLANT',
       desc: 'We make stainless steel pipes and tubes at our own plant in Alwar, Rajasthan. Capacity is 5,000 tonnes per year.',
-      image: '/images/plant/plant-overview.jpg',
+      image: '/images/plant/plant-overview.webp',
       icon: Cpu,
       tag: 'MANUFACTURING',
     },
@@ -74,7 +74,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenQuoteModal }) => {
       num: 'II',
       title: 'READY STOCK IN MUMBAI',
       desc: 'We keep ready stock of ferrous and non-ferrous metal. Small quantity or full lot, material can be given quickly.',
-      image: '/images/plant/size-range-stock.jpg',
+      image: '/images/plant/size-range-stock.webp',
       icon: Zap,
       tag: 'STOCKIST & SUPPLY',
     },
@@ -82,7 +82,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenQuoteModal }) => {
       num: 'III',
       title: 'TESTING BEFORE DISPATCH',
       desc: 'Every piece is checked before packing. Test certificate and other papers go along with the material.',
-      image: '/images/plant/inspection-packaging.jpg',
+      image: '/images/plant/inspection-packaging.webp',
       icon: ShieldCheck,
       tag: 'QUALITY CHECK',
     },
@@ -90,7 +90,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenQuoteModal }) => {
       num: 'IV',
       title: 'IMPORT & EXPORT',
       desc: 'We import and export all kinds of ferrous and non-ferrous metal, and supply to customers in India and outside.',
-      image: '/images/plant/decoiler-coil-line.jpg',
+      image: '/images/plant/decoiler-coil-line.webp',
       icon: Globe2,
       tag: 'INDIA & ABROAD',
     },
@@ -104,22 +104,22 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenQuoteModal }) => {
       code: 'ISO 9001:2015',
       title: 'Quality Management System',
       desc: 'Cert. No. QMS/010898/0619, valid up to 9 June 2028',
-      image: '/images/certificates/iso-9001-2015-thumb.jpg',
-      full: '/images/certificates/iso-9001-2015.jpg',
+      image: '/images/certificates/iso-9001-2015-thumb.webp',
+      full: '/images/certificates/iso-9001-2015.webp',
     },
     {
       code: 'ISO 14001:2015',
       title: 'Environmental Management System',
       desc: 'Cert. No. EMS/010896/0619, valid up to 9 June 2028',
-      image: '/images/certificates/iso-14001-2015-thumb.jpg',
-      full: '/images/certificates/iso-14001-2015.jpg',
+      image: '/images/certificates/iso-14001-2015-thumb.webp',
+      full: '/images/certificates/iso-14001-2015.webp',
     },
     {
       code: 'ISO 45001:2018',
       title: 'Occupational Health and Safety',
       desc: 'Cert. No. OHS/010897/0619, valid up to 9 June 2028',
-      image: '/images/certificates/iso-45001-2018-thumb.jpg',
-      full: '/images/certificates/iso-45001-2018.jpg',
+      image: '/images/certificates/iso-45001-2018-thumb.webp',
+      full: '/images/certificates/iso-45001-2018.webp',
     },
   ];
 
@@ -417,7 +417,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenQuoteModal }) => {
       {/* 1. Hero with Rich Background Photography */}
       <section
         style={{
-          backgroundImage: 'linear-gradient(135deg, rgba(0, 0, 0, 0.72) 0%, rgba(0, 0, 0, 0.82) 100%), url("/images/furnace_melt.jpg")',
+          backgroundImage: 'linear-gradient(135deg, rgba(0, 0, 0, 0.72) 0%, rgba(0, 0, 0, 0.82) 100%), url("/images/furnace_melt.webp")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           color: '#FFFFFF',
@@ -564,7 +564,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenQuoteModal }) => {
                 {/* Detail panel for the selected year */}
                 <div className="timeline-detail" key={timelineMilestones[activeMilestone].year}>
                   <div className="timeline-detail-img">
-                    <img
+                    <img loading="lazy"
                       src={timelineMilestones[activeMilestone].image}
                       alt={timelineMilestones[activeMilestone].title}
                     />

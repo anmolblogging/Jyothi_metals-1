@@ -373,7 +373,7 @@ export const DocumentViewerPage: React.FC = () => {
 
       <header className="pdf-toolbar">
         <Link to="/certifications" className="pdf-brand" title="Jyoti Metal (India) — certifications">
-          <img src="/images/jmi_logo.png" alt="Jyoti Metal (India)" width={38} height={38} />
+          <img loading="lazy" src="/images/jmi_logo.webp" alt="Jyoti Metal (India)" width={38} height={38} />
           <span style={{ minWidth: 0 }}>
             <span className="pdf-doc-title">{doc.title}</span>
             <span className="pdf-doc-sub">

@@ -1,5 +1,8 @@
 import { defineConfig, loadEnv, type Plugin, type ViteDevServer } from 'vite'
 import react from '@vitejs/plugin-react'
+import Sitemap from 'vite-plugin-sitemap'
+import { catalogProducts } from './src/data/catalogData.js'
+import { articles } from './src/data/blogArticles.js'
 
 const DEV_API_ROUTES = ['send-inquiry', 'metal-prices']
 
@@ -46,10 +49,43 @@ function devApiRoutes(env: Record<string, string>): Plugin {
   }
 }
 
+const staticRoutes = [
+  '/',
+  '/about',
+  '/products',
+  '/catalog',
+  '/contact',
+  '/services',
+  '/infrastructure',
+  '/quality',
+  '/blog',
+  '/careers',
+  '/faq',
+  '/services/laser-cutting',
+  '/services/forging',
+  '/services/weld-inspection',
+  '/quality-policy',
+  '/certifications',
+]
+
+const dynamicRoutes = [
+  ...staticRoutes,
+  ...catalogProducts.map((p: any) => `/product-detail?id=${encodeURIComponent(p.id)}`),
+  ...articles.map((a: any) => `/blog/${a.slug}`),
+]
+
 // https://vite.dev/config/
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '')
   return {
-    plugins: [react(), devApiRoutes(env)],
+    plugins: [
+      react(),
+      devApiRoutes(env),
+      Sitemap({
+        hostname: 'https://jyotimetal.co.in',
+        dynamicRoutes,
+        exclude: ['/library/*'],
+      }),
+    ],
   }
 })

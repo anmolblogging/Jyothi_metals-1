@@ -153,7 +153,7 @@ export const FaqPage: React.FC<FaqPageProps> = ({ onOpenQuoteModal, onNavigate }
         className="page-hero"
         style={{
           backgroundImage:
-            'linear-gradient(135deg, rgba(0, 0, 0, 0.92) 0%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.92) 100%), url("/images/pexels-jakubzerdzicki-33813584.jpg")',
+            'linear-gradient(135deg, rgba(0, 0, 0, 0.92) 0%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.92) 100%), url("/images/pexels-jakubzerdzicki-33813584.webp")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',

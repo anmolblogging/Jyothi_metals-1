@@ -93,7 +93,7 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({ onOpenQuoteModal }) 
       <section className="pp-hero">
         <div
           className="pp-hero-bg"
-          style={{ backgroundImage: 'url("/images/heavy_rolling_mill.jpg")' }}
+          style={{ backgroundImage: 'url("/images/heavy_rolling_mill.webp")' }}
         />
         <div className="pp-hero-scrim" />
         <div className="pp-hero-inner">

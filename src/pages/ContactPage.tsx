@@ -60,7 +60,7 @@ export const ContactPage: React.FC<ContactPageProps> = () => {
       {/* 1. Hero Banner */}
       <section
         style={{
-          backgroundImage: 'linear-gradient(135deg, rgba(0, 0, 0, 0.78) 0%, rgba(0, 0, 0, 0.88) 100%), url("/images/pexels-eugeniofr-30005294.jpg")',
+          backgroundImage: 'linear-gradient(135deg, rgba(0, 0, 0, 0.78) 0%, rgba(0, 0, 0, 0.88) 100%), url("/images/pexels-eugeniofr-30005294.webp")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           color: '#FFFFFF',

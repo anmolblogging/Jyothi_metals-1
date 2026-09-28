@@ -38,7 +38,7 @@ const certificates = [
     title: 'MILL TEST CERTIFICATE',
     issuer: 'In-House Accredited Laboratory',
     scope: 'Issued directly by our QA department with full chemical heat analysis and mechanical test data.',
-    image: '/images/pexels-bence-szemerey-337043-6804265.jpg',
+    image: '/images/pexels-bence-szemerey-337043-6804265.webp',
     verticalTag: 'EN 10204 3.1',
   },
   {
@@ -46,7 +46,7 @@ const certificates = [
     title: 'THIRD-PARTY WITNESSED MTC',
     issuer: 'Lloyd’s, DNV, TÜV, Bureau Veritas',
     scope: 'Independently witnessed chemical testing, tensile pulling, and non-destructive examination.',
-    image: '/images/pexels-pppsdavid-5851494.jpg',
+    image: '/images/pexels-pppsdavid-5851494.webp',
     verticalTag: 'EN 10204 3.2',
   },
   {
@@ -54,7 +54,7 @@ const certificates = [
     title: 'SOUR SERVICE CORROSION',
     issuer: 'Corrosion Testing International',
     scope: 'Sulfide stress cracking (SSC) and stress corrosion cracking (SCC) compliance for H2S oilfield service.',
-    image: '/images/pexels-sergey-sergeev-2153675005-32845683.jpg',
+    image: '/images/pexels-sergey-sergeev-2153675005-32845683.webp',
     verticalTag: 'NACE MR0175',
   },
   {
@@ -62,7 +62,7 @@ const certificates = [
     title: 'MATERIAL SPECIFICATION',
     issuer: 'ASTM International / ASME BPVC',
     scope: 'Guaranteed compliance with ASTM A240, A312, B16.5, B16.9, B16.11, and SB-575 titanium & nickel specs.',
-    image: '/images/pexels-alex-60339926-9878853.jpg',
+    image: '/images/pexels-alex-60339926-9878853.webp',
     verticalTag: 'ASTM / ASME',
   },
 ];
@@ -114,24 +114,24 @@ const isoCertificates = [
     code: 'ISO 9001:2015',
     system: 'Quality Management System',
     certNo: 'QMS/010898/0619',
-    image: '/images/certificates/iso-9001-2015.jpg',
-    thumb: '/images/certificates/iso-9001-2015-thumb.jpg',
+    image: '/images/certificates/iso-9001-2015.webp',
+    thumb: '/images/certificates/iso-9001-2015-thumb.webp',
     sites: [MUMBAI_SITE],
   },
   {
     code: 'ISO 14001:2015',
     system: 'Environmental Management System',
     certNo: 'EMS/010896/0619',
-    image: '/images/certificates/iso-14001-2015.jpg',
-    thumb: '/images/certificates/iso-14001-2015-thumb.jpg',
+    image: '/images/certificates/iso-14001-2015.webp',
+    thumb: '/images/certificates/iso-14001-2015-thumb.webp',
     sites: [MUMBAI_SITE, ALWAR_SITE],
   },
   {
     code: 'ISO 45001:2018',
     system: 'Occupational Health & Safety Management System',
     certNo: 'OHS/010897/0619',
-    image: '/images/certificates/iso-45001-2018.jpg',
-    thumb: '/images/certificates/iso-45001-2018-thumb.jpg',
+    image: '/images/certificates/iso-45001-2018.webp',
+    thumb: '/images/certificates/iso-45001-2018-thumb.webp',
     sites: [MUMBAI_SITE, ALWAR_SITE],
   },
 ];
@@ -573,7 +573,7 @@ export const CertificationsPage: React.FC<CertificationsPageProps> = ({ onOpenQu
       {/* 1. Hero Section with Rich Photography */}
       <section
         style={{
-          backgroundImage: 'linear-gradient(135deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.85) 100%), url("/images/pexels-willians-huerta-2157111846-36397988.jpg")',
+          backgroundImage: 'linear-gradient(135deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.85) 100%), url("/images/pexels-willians-huerta-2157111846-36397988.webp")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           color: '#FFFFFF',
@@ -746,7 +746,7 @@ export const CertificationsPage: React.FC<CertificationsPageProps> = ({ onOpenQu
             <X size={22} />
           </button>
           {/* Stop propagation so clicking the certificate itself does not dismiss it */}
-          <img
+          <img loading="lazy"
             src={openCert.image}
             alt={`${openCert.code} certificate issued to Jyoti Metal (India)`}
             onClick={(e) => e.stopPropagation()}

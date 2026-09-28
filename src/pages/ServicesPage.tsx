@@ -116,7 +116,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenQuoteModal, on
         className="page-hero"
         style={{
           backgroundImage:
-            'linear-gradient(135deg, rgba(0, 0, 0, 0.92) 0%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.92) 100%), url("/images/pexels-alex-60339926-9878853.jpg")',
+            'linear-gradient(135deg, rgba(0, 0, 0, 0.92) 0%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.92) 100%), url("/images/pexels-alex-60339926-9878853.webp")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
@@ -387,8 +387,8 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenQuoteModal, on
               className="about-arch-frame-reversed"
               style={{ overflow: 'hidden', boxShadow: '0 20px 45px rgba(0,0,0,0.14)', background: '#061221' }}
             >
-              <img
-                src="/images/precision_parts.png"
+              <img loading="lazy"
+                src="/images/precision_parts.webp"
                 alt="In-house precision machining and inspection cell"
                 style={{ width: '100%', height: '460px', objectFit: 'cover', display: 'block' }}
               />
@@ -436,7 +436,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenQuoteModal, on
       <section
         style={{
           backgroundImage:
-            'linear-gradient(135deg, rgba(6, 18, 33, 0.94) 0%, rgba(6, 18, 33, 0.82) 100%), url("/images/pexels-sergey-sergeev-2153675005-32845683.jpg")',
+            'linear-gradient(135deg, rgba(6, 18, 33, 0.94) 0%, rgba(6, 18, 33, 0.82) 100%), url("/images/pexels-sergey-sergeev-2153675005-32845683.webp")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           color: '#ffffff',

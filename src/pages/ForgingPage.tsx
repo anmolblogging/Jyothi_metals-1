@@ -51,28 +51,28 @@ const processHighlights = [
 ];
 
 const specifications = [
-  { step: 'I', label: 'Forging Method', value: 'Open die (free forging), closed die (impression), and seamless radial-axial ring rolling', image: '/images/furnace_melt.jpg' },
-  { step: 'II', label: 'Press & Hammer Line', value: '2,500 T hydraulic open die press, 5 T pneumatic hammer & 1,600 T closed die press', image: '/images/heavy_rolling_mill.jpg' },
-  { step: 'III', label: 'Component Weight Range', value: '0.5 kg forged fittings up to 8 metric tons single-piece open die forgings', image: '/images/flanges_industrial.png' },
-  { step: 'IV', label: 'Ring Rolling Capacity', value: 'Seamless rolled rings 150 mm to 2,000 mm outside diameter, 40 mm to 400 mm height', image: '/images/round_bars.png' },
-  { step: 'V', label: 'Post-Forge Heat Treatment', value: 'Normalizing, quench & temper, solution annealing and stress relief in computer-controlled furnaces', image: '/images/quality_lab.jpg' },
-  { step: 'VI', label: 'Governing Standards', value: 'ASTM A182 / A105 / A350, ASME B16.5 & B16.11, with NACE MR0175 compliance for sour service', image: '/images/pipe_fittings.png' },
+  { step: 'I', label: 'Forging Method', value: 'Open die (free forging), closed die (impression), and seamless radial-axial ring rolling', image: '/images/furnace_melt.webp' },
+  { step: 'II', label: 'Press & Hammer Line', value: '2,500 T hydraulic open die press, 5 T pneumatic hammer & 1,600 T closed die press', image: '/images/heavy_rolling_mill.webp' },
+  { step: 'III', label: 'Component Weight Range', value: '0.5 kg forged fittings up to 8 metric tons single-piece open die forgings', image: '/images/flanges_industrial.webp' },
+  { step: 'IV', label: 'Ring Rolling Capacity', value: 'Seamless rolled rings 150 mm to 2,000 mm outside diameter, 40 mm to 400 mm height', image: '/images/round_bars.webp' },
+  { step: 'V', label: 'Post-Forge Heat Treatment', value: 'Normalizing, quench & temper, solution annealing and stress relief in computer-controlled furnaces', image: '/images/quality_lab.webp' },
+  { step: 'VI', label: 'Governing Standards', value: 'ASTM A182 / A105 / A350, ASME B16.5 & B16.11, with NACE MR0175 compliance for sour service', image: '/images/pipe_fittings.webp' },
 ];
 
 const equipmentList = [
   {
     title: '2,500 T Hydraulic Forging Press',
-    image: '/images/furnace_melt.jpg',
+    image: '/images/furnace_melt.webp',
     caption: 'Open die press with programmable manipulator for heavy shafts, blocks and stepped discs.',
   },
   {
     title: 'Radial-Axial Ring Rolling Mill',
-    image: '/images/round_bars.png',
+    image: '/images/round_bars.webp',
     caption: 'Produces seamless rolled rings with uninterrupted circumferential grain flow and no weld seam.',
   },
   {
     title: 'Closed Die Flange & Fitting Cell',
-    image: '/images/flanges_industrial.png',
+    image: '/images/flanges_industrial.webp',
     caption: 'Impression die line for near-net-shape flanges, elbows, tees and forged pipe fittings.',
   },
 ];
@@ -152,7 +152,7 @@ const SpecHoverList: React.FC<{ items: typeof specifications }> = ({ items }) =>
                 zIndex: 2,
               }}
             >
-              <img
+              <img loading="lazy"
                 src={spec.image}
                 alt={spec.label}
                 style={{
@@ -348,7 +348,7 @@ export const ForgingPage: React.FC<ForgingPageProps> = ({ onOpenQuoteModal }) =>
       {/* 1. Hero Section with Rich Photography */}
       <section
         style={{
-          backgroundImage: 'linear-gradient(135deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.85) 100%), url("/images/furnace_melt.jpg")',
+          backgroundImage: 'linear-gradient(135deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.85) 100%), url("/images/furnace_melt.webp")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           color: '#FFFFFF',
@@ -423,8 +423,8 @@ export const ForgingPage: React.FC<ForgingPageProps> = ({ onOpenQuoteModal }) =>
           <Reveal>
             <div className="feature-split-grid">
               <div style={{ border: `1px solid ${COLORS.divider}`, overflow: 'hidden', background: COLORS.panel }}>
-                <img
-                  src="/images/furnace_melt.jpg"
+                <img loading="lazy"
+                  src="/images/furnace_melt.webp"
                   alt="Heated billet under the hydraulic forging press"
                   style={{ width: '100%', height: '400px', objectFit: 'cover', display: 'block' }}
                 />
@@ -510,7 +510,7 @@ export const ForgingPage: React.FC<ForgingPageProps> = ({ onOpenQuoteModal }) =>
               {equipmentList.map((eq) => (
                 <div key={eq.title} className="equipment-card">
                   <div style={{ height: '200px', overflow: 'hidden' }}>
-                    <img src={eq.image} alt={eq.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                    <img loading="lazy" src={eq.image} alt={eq.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                   </div>
                   <div style={{ padding: '24px', flexGrow: 1 }}>
                     <div style={{ fontWeight: 700, fontSize: '1.05rem', color: COLORS.text, marginBottom: '8px' }}>

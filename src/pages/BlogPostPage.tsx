@@ -44,7 +44,7 @@ export const BlogPostPage: React.FC<BlogPostPageProps> = ({ onOpenQuoteModal }) 
     <div style={{ background: '#FFFFFF' }}>
       {/* Hero: image behind a scrim, title and byline over it. */}
       <div style={{ position: 'relative', minHeight: '420px', display: 'flex', alignItems: 'flex-end' }}>
-        <img
+        <img loading="lazy"
           src={article.image}
           alt=""
           aria-hidden="true"
@@ -319,7 +319,7 @@ export const BlogPostPage: React.FC<BlogPostPageProps> = ({ onOpenQuoteModal }) 
                   }}
                 >
                   <div style={{ height: '160px', overflow: 'hidden' }}>
-                    <img src={r.image} alt="" aria-hidden="true" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                    <img loading="lazy" src={r.image} alt="" aria-hidden="true" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                   </div>
                   <div style={{ padding: '18px 20px 20px', display: 'flex', flexDirection: 'column', flex: 1 }}>
                     <span style={{ fontSize: '0.72rem', fontWeight: 800, color: ACCENT, textTransform: 'uppercase', letterSpacing: '0.7px', marginBottom: '9px' }}>

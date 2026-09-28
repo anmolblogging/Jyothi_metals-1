@@ -29,7 +29,7 @@ export const Footer: React.FC<FooterProps> = ({ setActiveTab, onOpenQuoteModal }
   return (
     <footer
       style={{
-        backgroundImage: 'linear-gradient(135deg, rgba(0, 0, 0, 0.92) 0%, rgba(0, 0, 0, 0.65) 50%, rgba(0, 0, 0, 0.92) 100%), url("/images/jm1.jpg")',
+        backgroundImage: 'linear-gradient(135deg, rgba(0, 0, 0, 0.92) 0%, rgba(0, 0, 0, 0.65) 50%, rgba(0, 0, 0, 0.92) 100%), url("/images/jm1.webp")',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
@@ -51,8 +51,8 @@ export const Footer: React.FC<FooterProps> = ({ setActiveTab, onOpenQuoteModal }
           }}
         >
           <div className="footer-logo-brand" style={{ display: 'flex', alignItems: 'center', gap: '18px' }}>
-            <img
-              src="/images/jmi_logo.png"
+            <img loading="lazy"
+              src="/images/jmi_logo.webp"
               alt="JMI - Jyoti Metal (India)"
               style={{
                 height: '92px',

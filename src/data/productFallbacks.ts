@@ -795,45 +795,45 @@ const buildRows = (form: ProductFormKey, material: MaterialKey, subCat: string):
 // Keyed by form so a flange page shows other flanges rather than a mix of
 // pipes and bars.
 const GALLERY_BY_FORM: Record<ProductFormKey, string[]> = {
-  pipe: ['client/ss-seamless-piping.jpg', 'client/images-2.jpg', 'client/stainless-steel-pipe.jpg', 'client/02.jpg'],
-  plate: ['client/stainless-steel-sheets-plates.jpg', 'client/images-5.jpg', 'client/3.webp', 'client/304-ss-sheet-500x500.webp'],
-  bar: ['client/images-8.jpg', 'client/8776124.jpg', 'client/ss-316-hex-and-square-bars-thumbs-500x500.jpg', 'client/super-duplex-steel-round-bar.webp'],
-  flange: ['client/ss-flanges.jpg', 'client/images-10.jpg', 'client/stainless-steel-flange.webp', 'client/large-diameter-stainless-steel-flanges.jpg'],
-  forged: ['client/stainless-steel-forged-fittings.jpg', 'client/threaded-forged-fitting.jpg', 'client/images-13.jpg', 'client/ms-forged-elbow-45degree.jpg'],
-  buttweld: ['client/stainless-steel-buttweld-fittings.jpg', 'client/butt-welding-fitting.jpg', 'client/images-15.jpg', 'client/buttweld-fittings.jpg'],
-  fastener: ['client/stainless-steel-fasteners-500x500.webp', 'client/images-16.jpg', 'client/60f27d878e28f-fasteners.jpg', 'client/ss-fastners.webp'],
+  pipe: ['client/ss-seamless-piping.webp', 'client/images-2.webp', 'client/stainless-steel-pipe.webp', 'client/02.webp'],
+  plate: ['client/stainless-steel-sheets-plates.webp', 'client/images-5.webp', 'client/3.webp', 'client/304-ss-sheet-500x500.webp'],
+  bar: ['client/images-8.webp', 'client/8776124.webp', 'client/ss-316-hex-and-square-bars-thumbs-500x500.webp', 'client/super-duplex-steel-round-bar.webp'],
+  flange: ['client/ss-flanges.webp', 'client/images-10.webp', 'client/stainless-steel-flange.webp', 'client/large-diameter-stainless-steel-flanges.webp'],
+  forged: ['client/stainless-steel-forged-fittings.webp', 'client/threaded-forged-fitting.webp', 'client/images-13.webp', 'client/ms-forged-elbow-45degree.webp'],
+  buttweld: ['client/stainless-steel-buttweld-fittings.webp', 'client/butt-welding-fitting.webp', 'client/images-15.webp', 'client/buttweld-fittings.webp'],
+  fastener: ['client/stainless-steel-fasteners-500x500.webp', 'client/images-16.webp', 'client/60f27d878e28f-fasteners.webp', 'client/ss-fastners.webp'],
   // One representative of each sealing family. The old list here was flange and
   // fitting photography — the hardware a gasket is bolted between, not the
   // gasket — so every gasket page showed three pictures of the wrong product.
   gasket: [
-    'products/af-fibre-sheet-standard.jpg',
-    'products/caf-jointing-sheet-std.jpg',
-    'products/spiral-wound-gasket-ss304.jpg',
-    'products/pre-cut-flange-gasket-fullface.jpg',
+    'products/af-fibre-sheet-standard.webp',
+    'products/caf-jointing-sheet-std.webp',
+    'products/spiral-wound-gasket-ss304.webp',
+    'products/pre-cut-flange-gasket-fullface.webp',
   ],
   // Rolled sections photographed as stock, not the generic plant shots that
   // used to sit here — a beam page should show beams.
   structural: [
-    'products/mild-steel-beams.jpg',
-    'products/mild-steel-angles.jpg',
-    'products/mild-steel-channels.jpg',
-    'products/universal-column.jpg',
+    'products/mild-steel-beams.webp',
+    'products/mild-steel-angles.webp',
+    'products/mild-steel-channels.webp',
+    'products/universal-column.webp',
   ],
   rebar: [
-    'products/tmt-rebar.jpg',
-    'products/structural-steel-sections.jpg',
-    'products/mild-steel-beams.jpg',
-    'products/mild-steel-angles.jpg',
+    'products/tmt-rebar.webp',
+    'products/structural-steel-sections.webp',
+    'products/mild-steel-beams.webp',
+    'products/mild-steel-angles.webp',
   ],
   // The specialized plate programmes are carbon-steel wear, armour and boiler
   // plate — the client's stainless photography reads wrong here, and the plant
   // shots we used before showed no product at all, so this row draws on the
   // heavy-plate photographs Champak publishes for the same programmes.
   specialized: [
-    'champak/other-items-manufacturer-exporter.jpg',
-    'champak/quenched-tempered-steel-plates-supplier-stockist.jpg',
-    'champak/boiler-steel-plates-sheets-supplier-stockist.jpg',
-    'champak/abrex-400-plates.jpg',
+    'champak/other-items-manufacturer-exporter.webp',
+    'champak/quenched-tempered-steel-plates-supplier-stockist.webp',
+    'champak/boiler-steel-plates-sheets-supplier-stockist.webp',
+    'champak/abrex-400-plates.webp',
   ],
 };
 
@@ -850,37 +850,37 @@ const GALLERY_BY_FORM: Record<ProductFormKey, string[]> = {
  */
 const BLACK_GALLERY_BY_FORM: Partial<Record<ProductFormKey, string[]>> = {
   pipe: [
-    'champak/alloy-steel-welded-pipe-manufacturer.jpg',
-    'champak/alloy-steel-a691-welded-pipe-manufacturer.jpg',
-    'champak/alloy-steel-p22-seamless-welded-pipe-manufacturer.jpg',
-    'champak/carbon-steel-seamless-ERW-pipes-tubes-manufacturer-exporter.jpg',
+    'champak/alloy-steel-welded-pipe-manufacturer.webp',
+    'champak/alloy-steel-a691-welded-pipe-manufacturer.webp',
+    'champak/alloy-steel-p22-seamless-welded-pipe-manufacturer.webp',
+    'champak/carbon-steel-seamless-ERW-pipes-tubes-manufacturer-exporter.webp',
   ],
   plate: [
-    'champak/mild-steel-plates-sheets-manufacturer-exporter.jpg',
-    'champak/sa-387-gr-5-sheets-plates-manufacturer-stockiest-supplier.jpg',
-    'champak/sa-387-gr-11-sheets-plates-manufacturer-stockiest-supplier.jpg',
-    'champak/api-5l-x-series-plates-sheets-manufacturer-exporter.jpg',
+    'champak/mild-steel-plates-sheets-manufacturer-exporter.webp',
+    'champak/sa-387-gr-5-sheets-plates-manufacturer-stockiest-supplier.webp',
+    'champak/sa-387-gr-11-sheets-plates-manufacturer-stockiest-supplier.webp',
+    'champak/api-5l-x-series-plates-sheets-manufacturer-exporter.webp',
   ],
   bar: [
-    'champak/alloy-steel-f5-round-bars-rods-supplier-stockist.jpg',
-    'champak/alloy-steel-f22-round-bars-rods-supplier-stockist.jpg',
-    'champak/alloy-steel-f12-round-bars-rods-supplier-stockist.jpg',
-    'champak/alloy-steel-f92-round-bars-rods-supplier-stockist.jpg',
+    'champak/alloy-steel-f5-round-bars-rods-supplier-stockist.webp',
+    'champak/alloy-steel-f22-round-bars-rods-supplier-stockist.webp',
+    'champak/alloy-steel-f12-round-bars-rods-supplier-stockist.webp',
+    'champak/alloy-steel-f92-round-bars-rods-supplier-stockist.webp',
   ],
   flange: [
-    'champak/alloy-steel-f11-flanges-suppliers-exporters.jpg',
-    'champak/alloy-steel-f22-flanges-suppliers-exporters.jpg',
-    'champak/alloy-steel-f92-flanges-suppliers-exporters.jpg',
-    'champak/alloy-steel-f12-flanges-suppliers-exporters.jpg',
+    'champak/alloy-steel-f11-flanges-suppliers-exporters.webp',
+    'champak/alloy-steel-f22-flanges-suppliers-exporters.webp',
+    'champak/alloy-steel-f92-flanges-suppliers-exporters.webp',
+    'champak/alloy-steel-f12-flanges-suppliers-exporters.webp',
   ],
-  forged: ['champak/carbon-steel-forged-fittings-suppliers-exporters.jpg'],
+  forged: ['champak/carbon-steel-forged-fittings-suppliers-exporters.webp'],
   buttweld: [
-    'champak/alloy-steel-buttweld-fittings-suppliers-exporters.jpg',
-    'champak/carbon-steel-buttweld-fittings-suppliers-exporters.jpg',
+    'champak/alloy-steel-buttweld-fittings-suppliers-exporters.webp',
+    'champak/carbon-steel-buttweld-fittings-suppliers-exporters.webp',
   ],
   fastener: [
-    'champak/carbon-steel-fasteners-manufacturer-exporter.jpg',
-    'champak/alloy-steel-fasteners-suppliers-exporters.jpg',
+    'champak/carbon-steel-fasteners-manufacturer-exporter.webp',
+    'champak/alloy-steel-fasteners-suppliers-exporters.webp',
   ],
 };
 
@@ -893,28 +893,28 @@ const BLACK_GALLERY_BY_FORM: Partial<Record<ProductFormKey, string[]>> = {
  */
 const GASKET_GALLERY_BY_SUBCAT: Record<string, string[]> = {
   'Asbestos Free (AF) Fibre Jointing Sheets': [
-    'products/af-fibre-sheet-standard.jpg',
-    'products/af-fibre-sheet-ht.jpg',
-    'products/af-fibre-sheet-reinforced.jpg',
-    'products/caf-jointing-sheet-std.jpg',
+    'products/af-fibre-sheet-standard.webp',
+    'products/af-fibre-sheet-ht.webp',
+    'products/af-fibre-sheet-reinforced.webp',
+    'products/caf-jointing-sheet-std.webp',
   ],
   'Compressed Fibre (CAF) Jointing Sheets': [
-    'products/caf-jointing-sheet-std.jpg',
-    'products/caf-jointing-sheet-acid.jpg',
-    'products/caf-jointing-sheet-metallic.jpg',
-    'products/af-fibre-sheet-standard.jpg',
+    'products/caf-jointing-sheet-std.webp',
+    'products/caf-jointing-sheet-acid.webp',
+    'products/caf-jointing-sheet-metallic.webp',
+    'products/af-fibre-sheet-standard.webp',
   ],
   'Spiral Wound Gaskets': [
-    'products/spiral-wound-gasket-ss304.jpg',
-    'products/spiral-wound-gasket-ss316l.jpg',
-    'products/spiral-wound-gasket-inconel.jpg',
-    'products/pre-cut-gasket-metal-jacketed.jpg',
+    'products/spiral-wound-gasket-ss304.webp',
+    'products/spiral-wound-gasket-ss316l.webp',
+    'products/spiral-wound-gasket-inconel.webp',
+    'products/pre-cut-gasket-metal-jacketed.webp',
   ],
   'Pre Cut Gaskets': [
-    'products/pre-cut-flange-gasket-fullface.jpg',
-    'products/pre-cut-flange-gasket-ring.jpg',
-    'products/pre-cut-gasket-metal-jacketed.jpg',
-    'products/spiral-wound-gasket-ss304.jpg',
+    'products/pre-cut-flange-gasket-fullface.webp',
+    'products/pre-cut-flange-gasket-ring.webp',
+    'products/pre-cut-gasket-metal-jacketed.webp',
+    'products/spiral-wound-gasket-ss304.webp',
   ],
 };
 

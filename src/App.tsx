@@ -2,12 +2,14 @@ import { useLayoutEffect, useState, lazy, Suspense } from 'react';
 import { Routes, Route, useNavigate, useLocation, useSearchParams } from 'react-router-dom';
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
-import { QuoteModal } from './components/QuoteModal';
 import { PageLoader } from './components/PageLoader';
 import { WhatsAppButton } from './components/WhatsAppButton';
+import { Home } from './pages/Home'; // Eagerly load Home for fastest LCP
+
+// Lazily load heavy modals that are only needed on interaction
+const QuoteModal = lazy(() => import('./components/QuoteModal').then(m => ({ default: m.QuoteModal })));
 
 // Lazy-loaded Page Components for fast code-splitting and smooth transition loading
-const Home = lazy(() => import('./pages/Home').then(m => ({ default: m.Home })));
 const ProductsPage = lazy(() => import('./pages/ProductsPage').then(m => ({ default: m.ProductsPage })));
 const CatalogPage = lazy(() => import('./pages/CatalogPage').then(m => ({ default: m.CatalogPage })));
 const AboutPage = lazy(() => import('./pages/AboutPage').then(m => ({ default: m.AboutPage })));
@@ -30,27 +32,17 @@ const ProductDetailPage = lazy(() => import('./pages/ProductDetailPage').then(m 
 const DocumentViewerPage = lazy(() => import('./pages/DocumentViewerPage').then(m => ({ default: m.DocumentViewerPage })));
 
 // Map a legacy "tab" id (used across Navbar/Footer/pages) to its real URL path.
-const tabToPath = (tab: string): string => (tab === 'home' ? '/' : `/${tab}`);
+const tabToPath = (tab: string) => (tab === 'home' ? '/' : `/${tab}`);
 
 // Derive the active tab id from the current URL path (drives nav highlighting).
 // The catalogue lives under its own path but still belongs to the Products nav item.
-const pathToTab = (pathname: string): string => {
+const pathToTab = (pathname: string) => {
   if (pathname === '/') return 'home';
   if (pathname === '/catalog') return 'products';
   return pathname.slice(1);
 };
 
-// Jump to the top whenever the route changes, so a new page always opens at its
-// hero rather than wherever the previous page was scrolled to.
-//
-// This must be an INSTANT jump, not a smooth one. Navigating from the bottom of
-// a long page (e.g. "View Details" at the foot of /products) would otherwise
-// render the new page already scrolled to its footer and then visibly animate
-// all the way up. Two things have to be defeated for that:
-//   1. behavior: 'smooth' here, and
-//   2. `html { scroll-behavior: smooth }` in index.css — which also applies to
-//      the plain window.scrollTo(0, 0) form, so an inline override is needed.
-// useLayoutEffect runs before paint, so the jump is never rendered.
+// Jump to the top whenever the route changes
 function ScrollToTop() {
   const { pathname } = useLocation();
   useLayoutEffect(() => {
@@ -86,7 +78,6 @@ export function App() {
     setIsQuoteModalOpen(true);
   };
 
-  // Navigate by legacy tab id — lets Navbar/Footer/pages keep calling setActiveTab('about') etc.
   const navigateTab = (tab: string) => {
     navigate(tabToPath(tab));
   };
@@ -95,8 +86,6 @@ export function App() {
     navigate(`/products?category=${encodeURIComponent(categoryName)}`);
   };
 
-  // The document reader fills its own tab: no navbar, no footer, no WhatsApp
-  // bubble over the page it is meant to be reading.
   if (location.pathname.startsWith('/library/')) {
     return (
       <Suspense fallback={<PageLoader />}>
@@ -111,7 +100,6 @@ export function App() {
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
       <ScrollToTop />
 
-      {/* Primary Fixed Navbar with Frosted Glass scroll effect */}
       <Navbar
         activeTab={activeTab}
         setActiveTab={navigateTab}
@@ -119,7 +107,6 @@ export function App() {
         onSelectCategory={handleSelectCategory}
       />
 
-      {/* Main Page View — real URL routing with Lazy Suspense Fallback */}
       <main style={{ flexGrow: 1 }}>
         <Suspense fallback={<PageLoader />}>
           <Routes>
@@ -189,7 +176,6 @@ export function App() {
               path="/product-detail"
               element={<ProductDetailPage onOpenQuoteModal={handleOpenQuoteModal} />}
             />
-            {/* Unknown paths fall back to Home */}
             <Route
               path="*"
               element={<Home onNavigate={navigateTab} onOpenQuoteModal={handleOpenQuoteModal} />}
@@ -198,21 +184,22 @@ export function App() {
         </Suspense>
       </main>
 
-      {/* Site Footer */}
       <Footer
         setActiveTab={navigateTab}
         onOpenQuoteModal={() => handleOpenQuoteModal()}
       />
 
-      {/* Floating WhatsApp contact button (bottom-right, all pages) */}
       <WhatsAppButton />
 
-      {/* Quote Calculator & Inquiry Modal */}
-      <QuoteModal
-        isOpen={isQuoteModalOpen}
-        onClose={() => setIsQuoteModalOpen(false)}
-        initialProduct={quoteProduct}
-      />
+      {isQuoteModalOpen && (
+        <Suspense fallback={null}>
+          <QuoteModal
+            isOpen={isQuoteModalOpen}
+            onClose={() => setIsQuoteModalOpen(false)}
+            initialProduct={quoteProduct}
+          />
+        </Suspense>
+      )}
     </div>
   );
 }

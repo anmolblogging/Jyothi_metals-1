@@ -115,7 +115,7 @@ export const QualityPage: React.FC<QualityPageProps> = ({ onOpenQuoteModal, onNa
         className="page-hero"
         style={{
           backgroundImage:
-            'linear-gradient(135deg, rgba(0, 0, 0, 0.92) 0%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.92) 100%), url("/images/pexels-sergey-sergeev-2153675005-32845683.jpg")',
+            'linear-gradient(135deg, rgba(0, 0, 0, 0.92) 0%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.92) 100%), url("/images/pexels-sergey-sergeev-2153675005-32845683.webp")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
@@ -359,8 +359,8 @@ export const QualityPage: React.FC<QualityPageProps> = ({ onOpenQuoteModal, onNa
               className="about-arch-frame-reversed"
               style={{ overflow: 'hidden', boxShadow: '0 20px 45px rgba(0,0,0,0.14)', background: '#061221' }}
             >
-              <img
-                src="/images/precision_parts.png"
+              <img loading="lazy"
+                src="/images/precision_parts.webp"
                 alt="Mill Test Certificate documentation and precision alloy components"
                 style={{ width: '100%', height: '460px', objectFit: 'cover', display: 'block' }}
               />

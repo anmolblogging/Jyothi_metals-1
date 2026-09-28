@@ -27,7 +27,7 @@ export const BlogPage: React.FC<BlogPageProps> = () => {
       {/* 1. Cinematic Industrial Hero Banner (Matching Screenshot Layout & Crosshair Grid) */}
       <section
         style={{
-          backgroundImage: 'linear-gradient(135deg, rgba(0, 0, 0, 0.72) 0%, rgba(0, 0, 0, 0.84) 100%), url("/images/pexels-sergey-sergeev-2153675005-32845683.jpg")',
+          backgroundImage: 'linear-gradient(135deg, rgba(0, 0, 0, 0.72) 0%, rgba(0, 0, 0, 0.84) 100%), url("/images/pexels-sergey-sergeev-2153675005-32845683.webp")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           position: 'relative',
@@ -157,7 +157,7 @@ export const BlogPage: React.FC<BlogPageProps> = () => {
             >
               {/* Image Container with Category Badge */}
               <div style={{ height: '230px', overflow: 'hidden', position: 'relative' }}>
-                <img
+                <img loading="lazy"
                   src={article.image}
                   alt={article.title}
                   style={{

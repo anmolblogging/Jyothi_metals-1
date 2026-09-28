@@ -173,7 +173,7 @@ export const CareersPage: React.FC<CareersPageProps> = ({ onOpenQuoteModal, onNa
         className="page-hero"
         style={{
           backgroundImage:
-            'linear-gradient(135deg, rgba(0, 0, 0, 0.92) 0%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.92) 100%), url("/images/pexels-willians-huerta-2157111846-36397988.jpg")',
+            'linear-gradient(135deg, rgba(0, 0, 0, 0.92) 0%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.92) 100%), url("/images/pexels-willians-huerta-2157111846-36397988.webp")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
@@ -495,7 +495,7 @@ export const CareersPage: React.FC<CareersPageProps> = ({ onOpenQuoteModal, onNa
       <section
         style={{
           backgroundImage:
-            'linear-gradient(135deg, rgba(6, 18, 33, 0.94) 0%, rgba(6, 18, 33, 0.82) 100%), url("/images/pexels-sergey-sergeev-2153675005-32845683.jpg")',
+            'linear-gradient(135deg, rgba(6, 18, 33, 0.94) 0%, rgba(6, 18, 33, 0.82) 100%), url("/images/pexels-sergey-sergeev-2153675005-32845683.webp")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           color: '#ffffff',

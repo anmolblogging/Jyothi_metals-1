@@ -386,7 +386,7 @@ export const CatalogPage: React.FC<CatalogPageProps> = ({
                       }}
                     >
                       <div className="product-image-container" style={{ height: '200px', position: 'relative', overflow: 'hidden' }}>
-                        <img
+                        <img loading="lazy"
                           src={prod.image}
                           alt={prod.title}
                           className="product-img"

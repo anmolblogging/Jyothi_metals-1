@@ -167,8 +167,8 @@ export const Navbar: React.FC<NavbarProps> = ({
             }}
             className="logo-link"
           >
-            <img
-              src="/images/jmi_logo.png"
+            <img loading="lazy"
+              src="/images/jmi_logo.webp"
               alt="JMI - Jyoti Metal (India) Logo"
               style={{
                 height: '76px',

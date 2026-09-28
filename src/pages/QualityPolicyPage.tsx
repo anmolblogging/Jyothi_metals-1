@@ -35,7 +35,7 @@ const isoStandards = [
     issuer: 'TÜV NORD Cert GmbH',
     validity: 'VALID THROUGH 2028',
     desc: 'Complete process control across raw melt, rolling, machining, and dispatch with 100% heat-lot traceability.',
-    image: '/images/pexels-tokuo-nobuhiro-79378678-20472153.jpg',
+    image: '/images/pexels-tokuo-nobuhiro-79378678-20472153.webp',
     verticalTag: 'ISO 9001:2015',
   },
   {
@@ -44,7 +44,7 @@ const isoStandards = [
     issuer: 'Bureau Veritas Certification',
     validity: 'VALID THROUGH 2027',
     desc: 'Sub-micron tolerance airframe, turbine, and missile alloy components certified for Tier-1 defense contractors.',
-    image: '/images/pexels-willians-huerta-2157111846-36397988.jpg',
+    image: '/images/pexels-willians-huerta-2157111846-36397988.webp',
     verticalTag: 'AS9100D DEFENSE',
   },
   {
@@ -53,7 +53,7 @@ const isoStandards = [
     issuer: 'Lloyd’s Register Quality Assurance',
     validity: 'VALID THROUGH 2028',
     desc: 'Certified manufacturing for high-pressure oil, gas, chemical, and nuclear pipeline installations across Europe.',
-    image: '/images/pexels-eugeniofr-30005294.jpg',
+    image: '/images/pexels-eugeniofr-30005294.webp',
     verticalTag: 'PED 2014/68/EU',
   },
   {
@@ -62,7 +62,7 @@ const isoStandards = [
     issuer: 'DNV GL Business Assurance',
     validity: 'VALID THROUGH 2027',
     desc: 'Zero-discharge melt shop operations and circular alloy scrap recycling protocols.',
-    image: '/images/pexels-jakubzerdzicki-33813584.jpg',
+    image: '/images/pexels-jakubzerdzicki-33813584.webp',
     verticalTag: 'ISO 14001:2015',
   },
 ];
@@ -167,7 +167,7 @@ export const QualityPolicyPage: React.FC<QualityPolicyPageProps> = ({ onOpenQuot
       {/* 1. Hero Section with Rich Photography */}
       <section
         style={{
-          backgroundImage: 'linear-gradient(135deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.85) 100%), url("/images/pexels-tokuo-nobuhiro-79378678-20472153.jpg")',
+          backgroundImage: 'linear-gradient(135deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.85) 100%), url("/images/pexels-tokuo-nobuhiro-79378678-20472153.webp")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           color: '#FFFFFF',
@@ -337,7 +337,7 @@ export const QualityPolicyPage: React.FC<QualityPolicyPageProps> = ({ onOpenQuot
                   border: `1px solid ${COLORS.divider}`,
                 }}
               >
-                <img
+                <img loading="lazy"
                 src={std.image}
                 alt={std.title}
                 style={{

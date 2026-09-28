@@ -457,7 +457,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({ onOpenQuot
                   overflow: 'hidden',
                 }}
               >
-                <img
+                <img loading="lazy"
                   src={activeImage || galleryImages[0]}
                   alt={currentProduct.title}
                   style={{ width: '100%', height: '100%', objectFit: 'cover' }}
@@ -493,7 +493,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({ onOpenQuot
                     className={`thumb-item ${activeImage === img ? 'active' : ''}`}
                     onClick={() => setActiveImage(img)}
                   >
-                    <img src={img} alt={`Gallery ${idx + 1}`} />
+                    <img loading="lazy" src={img} alt={`Gallery ${idx + 1}`} />
                   </div>
                 ))}
               </div>
@@ -589,7 +589,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({ onOpenQuot
               before opening the detail tables. */}
           <div className="pd-spec-box">
             <div className="pd-spec-figure">
-              <img src={currentProduct.image || galleryImages[0]} alt={currentProduct.title} />
+              <img loading="lazy" src={currentProduct.image || galleryImages[0]} alt={currentProduct.title} />
             </div>
             <div className="pd-spec-body">
               <h2 className="pd-spec-heading">{acContent ? acContent.specHeading : gradeSpec.heading}</h2>
@@ -1020,7 +1020,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({ onOpenQuot
                 }}
               >
                 <div style={{ width: '80px', height: '80px', flexShrink: 0, overflow: 'hidden', border: '1px solid #E0E8E8' }}>
-                  <img src={rel.image} alt={rel.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                  <img loading="lazy" src={rel.image} alt={rel.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                 </div>
                 <div style={{ flex: 1 }}>
                   {/* Title only. The indicative ₹/kg that used to sit here is a

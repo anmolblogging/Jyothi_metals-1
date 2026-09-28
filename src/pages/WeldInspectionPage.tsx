@@ -51,28 +51,28 @@ const processHighlights = [
 ];
 
 const specifications = [
-  { step: 'I', label: 'NDT Standard Compliance', value: 'ASME Sec V, EN ISO 17640, ASTM A388, API 1104, BS EN 10228', image: '/images/quality_lab.jpg' },
-  { step: 'II', label: 'Defect Detection Threshold', value: 'Sub-surface inclusions & weld laminations down to 0.1mm', image: '/images/pexels-pppsdavid-5851494.jpg' },
-  { step: 'III', label: 'Probe Technology', value: 'Phased-Array Ultrasonic (PAUT) 1MHz to 15MHz multi-element transducers', image: '/images/pexels-willians-huerta-2157111846-36397988.jpg' },
-  { step: 'IV', label: 'Complementary NDT Methods', value: 'Radiographic (X-Ray), Dye Penetrant (DPT), Magnetic Particle (MPI)', image: '/images/stainless_pipes.png' },
-  { step: 'V', label: 'Inspector Certification', value: '100% in-house inspection conducted by ASNT Level II & III certified personnel', image: '/images/pexels-bence-szemerey-337043-6804265.jpg' },
-  { step: 'VI', label: 'Documentation Output', value: 'EN 10204 3.1 / 3.2 NDT Inspection Certificate + Digital Scan Records', image: '/images/pexels-jakubzerdzicki-33813584.jpg' },
+  { step: 'I', label: 'NDT Standard Compliance', value: 'ASME Sec V, EN ISO 17640, ASTM A388, API 1104, BS EN 10228', image: '/images/quality_lab.webp' },
+  { step: 'II', label: 'Defect Detection Threshold', value: 'Sub-surface inclusions & weld laminations down to 0.1mm', image: '/images/pexels-pppsdavid-5851494.webp' },
+  { step: 'III', label: 'Probe Technology', value: 'Phased-Array Ultrasonic (PAUT) 1MHz to 15MHz multi-element transducers', image: '/images/pexels-willians-huerta-2157111846-36397988.webp' },
+  { step: 'IV', label: 'Complementary NDT Methods', value: 'Radiographic (X-Ray), Dye Penetrant (DPT), Magnetic Particle (MPI)', image: '/images/stainless_pipes.webp' },
+  { step: 'V', label: 'Inspector Certification', value: '100% in-house inspection conducted by ASNT Level II & III certified personnel', image: '/images/pexels-bence-szemerey-337043-6804265.webp' },
+  { step: 'VI', label: 'Documentation Output', value: 'EN 10204 3.1 / 3.2 NDT Inspection Certificate + Digital Scan Records', image: '/images/pexels-jakubzerdzicki-33813584.webp' },
 ];
 
 const equipmentList = [
   {
     title: 'Phased-Array UT Scanner',
-    image: '/images/stainless_pipes.png',
+    image: '/images/stainless_pipes.webp',
     caption: 'Multi-channel ultrasonic scanner capturing real-time volumetric weld cross-sections.',
   },
   {
     title: 'High-Energy X-Ray Vault',
-    image: '/images/precision_parts.png',
+    image: '/images/precision_parts.webp',
     caption: 'Shielded radiographic chamber for internal porosity & fusion inspection.',
   },
   {
     title: 'Certified Hydro-Test Station',
-    image: '/images/flanges_industrial.png',
+    image: '/images/flanges_industrial.webp',
     caption: 'Computerized hydrostatic pressure test bench up to 25,000 PSI.',
   },
 ];
@@ -152,7 +152,7 @@ const SpecHoverList: React.FC<{ items: typeof specifications }> = ({ items }) =>
                 zIndex: 2,
               }}
             >
-              <img
+              <img loading="lazy"
                 src={spec.image}
                 alt={spec.label}
                 style={{
@@ -367,7 +367,7 @@ export const WeldInspectionPage: React.FC<WeldInspectionPageProps> = ({ onOpenQu
       {/* 1. Hero Section with Rich Photography */}
       <section
         style={{
-          backgroundImage: 'linear-gradient(135deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.85) 100%), url("/images/pexels-sergey-sergeev-2153675005-32845683.jpg")',
+          backgroundImage: 'linear-gradient(135deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.85) 100%), url("/images/pexels-sergey-sergeev-2153675005-32845683.webp")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           color: '#FFFFFF',
@@ -442,8 +442,8 @@ export const WeldInspectionPage: React.FC<WeldInspectionPageProps> = ({ onOpenQu
           <Reveal>
             <div className="feature-split-grid">
               <div style={{ border: `1px solid ${COLORS.divider}`, overflow: 'hidden', background: COLORS.panel }}>
-                <img
-                  src="/images/stainless_pipes.png"
+                <img loading="lazy"
+                  src="/images/stainless_pipes.webp"
                   alt="Ultrasonic weld inspection scanning"
                   style={{ width: '100%', height: '400px', objectFit: 'cover', display: 'block' }}
                 />
@@ -529,7 +529,7 @@ export const WeldInspectionPage: React.FC<WeldInspectionPageProps> = ({ onOpenQu
               {equipmentList.map((eq) => (
                 <div key={eq.title} className="equipment-card">
                   <div style={{ height: '200px', overflow: 'hidden' }}>
-                    <img src={eq.image} alt={eq.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                    <img loading="lazy" src={eq.image} alt={eq.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                   </div>
                   <div style={{ padding: '24px', flexGrow: 1 }}>
                     <div style={{ fontWeight: 700, fontSize: '1.05rem', color: COLORS.text, marginBottom: '8px' }}>
